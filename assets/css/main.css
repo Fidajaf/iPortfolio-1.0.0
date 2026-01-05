@@ -824,9 +824,12 @@ section,
 
 /* Portfolio Cards Container */
 .portfolio .row.isotope-container {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  
   margin: -15px; /* optional: adjust spacing */
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio .portfolio-item {
