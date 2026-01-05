@@ -879,7 +879,7 @@ section,
   color: #ffffff;
   display: inline-block;
   background-color: var(--accent-color);
-  margin-bottom: 10px;
+  margin-bottom: 28px; /* increased from 10px */
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -898,9 +898,7 @@ section,
 .portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
-  font-size: 26px;
-  top: calc(50% - 14px);
+  top: 62%; /* moved down from calc(50% - 14px) */
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
@@ -912,9 +910,15 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
+  left: calc(50% + 6px); /* adjust horizontal spacing */
   font-size: 34px;
   line-height: 0;
+  top: 62%;
+}
+portfolio .portfolio-content .portfolio-info .preview-link {
+  left: calc(50% - 36px); /* adjust horizontal spacing */
+  font-size: 26px;
+  top: 62%;
 }
 
 .portfolio .portfolio-content:hover .portfolio-info {
